@@ -1,0 +1,126 @@
+/*无限级分类样式*/
+span.cate-span {display: inline-block; height: 21px;vertical-align: middle; background-image: url(../img/tab_sign.png); background-repeat: no-repeat; }
+span.cate-level{display: inline-block;width:45px;height: 21px;vertical-align: middle;background-image: url(../img/tab_sign.png); background-repeat:no-repeat;background-position:0 -30px;}
+span.cate-middle{width: 40px; background-position: 0 0;}
+span.cate-last{width:40px; background-position:-55px 0;}
+/*重写AdminLTE样式*/
+label{margin:0;padding:0;font-weight:100;}
+.nav-tabs{margin-bottom:20px;}
+.logo-xs{float: left;background-color:transparent;background-image:none;padding: 15px 15px;font-family:'微软雅黑';color: #fff;}
+.logo-xs:hover{background-color: #367fa9;color: #fff;}
+@media (max-width: 767px) {
+    .main-sidebar {
+        padding-top: 50px;
+    }
+}
+@media (max-width: 767px) {
+    .fixed .content-wrapper,
+    .fixed .right-side {
+        padding-top: 50px;
+    }
+}
+.btn-upload{
+    position: relative;
+    overflow: hidden;
+    vertical-align: top;
+}
+.input-upload{
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+    line-height: normal;
+}
+
+.image_file{
+    width: 200px;
+}
+.image_file img{
+    border:1px solid  #ddd;
+    max-width: 200px;
+    max-height: 150px;
+}
+.image_file .caption{
+    padding: 0;
+}
+.image_file .caption span,.image_file .caption h5{
+    width: 190px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    
+    vertical-align: middle;
+}
+.image_file .caption h5{
+    line-height: 18px;
+    margin:5px 0;
+}
+.table-middle tbody tr td{
+    vertical-align: middle;
+}
+.w-20{width: 20px !important;}
+.w-40{width: 40px !important;}
+.w-50{width: 50px !important;}
+.w-60{width: 60px !important;}
+.w-80{width: 80px !important;}
+.w-100{width: 100px !important;}
+.w-120{width: 120px !important;}
+.w-140{width: 140px !important;}
+.w-150{width: 150px !important;}
+.w-160{width: 160px !important;}
+.w-180{width: 180px !important;}
+.w-200{width: 200px !important;}
+.w-220{width: 220px !important;}
+.w-240{width: 240px !important;}
+.w-250{width: 250px !important;}
+.w-260{width: 260px !important;}
+.w-280{width: 280px !important;}
+.w-300{width: 300px !important;}
+.w-320{width: 320px !important;}
+.w-340{width: 340px !important;}
+.w-350{width: 350px !important;}
+.w-360{width: 360px !important;}
+.w-380{width: 380px !important;}
+.w-400{width: 400px !important;}
+.w-450{width: 450px !important;}
+.w-500{width: 500px !important;}
+.w-550{width: 550px !important;}
+.w-600{width: 600px !important;}
+.w-650{width: 650px !important;}
+.w-700{width: 700px !important;}
+.w-750{width: 750px !important;}
+.w-800{width: 800px !important;}
+.w-850{width: 850px !important;}
+.no-padding-left{padding-left:0;}
+.no-padding-right{padding-right:0;}
+.no-padding-top{padding-top:0;}
+.no-padding-bottom{padding-bottom:0;}
+
+/*相册弹层样式*/
+.view{ height:380px; overflow:hidden;}
+.view .image-info{ width:120px; height:120px; margin:5px 5px 0 0 !important; position:relative;}
+.view .image-info img{ width:120px; height:120px; }
+.view .image-info .selected_mark{ width:120px; height:120px; top:0; left:0; position:absolute; z-index:3; cursor:pointer;}
+.view .image-info .selected_mark:hover{ border:3px solid #1093F9;}
+.view .image-info a.selected .selected_mark:hover{border:3px solid #1093F9;background-position: 77px 77px;}
+.view .image-info a.selected .selected_mark{background: rgba(0, 0, 0, 0) url("/public/plugins/webuploader/images/success.png") no-repeat scroll right bottom;background-position: 80px 80px;}
+.layui-layer-imgtit em{display:none;}
+.column-list .input{height:28px;padding:4px;}
+
+.article-table .media{height:48px;overflow:hidden;}
+.article-table .media h4{margin-bottom:0;padding-bottom:5px;}
+.article-table .media .default-img{height:48px;width:48px;background:#ddd;text-align:center;overflow:hidden;display:block;line-height:48px;color:#999;}
+.article-table .media a{color:#000;}
+.article-table .media img{height:48px;width:48px;}
+.article-table .media-body span{color:#999;}
+
+/*
+.product-img .thumbnail{width:120px !important;}
+.product-img .caption{width:120px;}*/
+
+
+.webuploader-container .list_pic{width:150px;height:180px;float:left;margin-right:5px;text-align:center;}
+.webuploader-container .list_pic img{width:150px;height:150px;cursor:pointer;}
+.webuploader-container .list_pic button{margin-top:3px;padding:0 16px;}

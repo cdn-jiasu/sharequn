@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" />
+<script src="js/jquery.js" language="javascript" type="text/javascript"></script>
+<script language="javascript" type="text/javascript" src="js/ss.js"></script>
+<script type="text/javascript" src="js/global.js"></script>
+<script type="text/javascript" src="js/tab.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var $window = $(window),
+			window_width = $window.width();
+		$('#js_banner, #js_banner_img li').width(window_width);
+
+		var urlParam = G.util.parse.url(),
+			startFrame = 0;
+		if (urlParam.search && ('banner' in urlParam.search)) {
+			startFrame = (parseInt(urlParam.search['banner'])-1) || 0;
+		}
+
+		new $.Tab({/*添加圆点按钮*/
+			target: $('#js_banner_img li'),
+			effect: 'slide3d',
+			animateTime: 200,
+			stay: 3000,
+			playTo: startFrame,
+			autoPlay: true,
+			merge: true,
+			prevBtn: $('#js_banner_pre'),
+			nextBtn: $('#js_banner_next')
+		});
+		$('#js_banner_img').css('left','-' + (window_width * startFrame) + 'px');
+	})
+</script>
+</head>
+
+<body>
+<div id="header">
+  <div class="h_top"><a href="index.html" class="home_a"></a><span><a href="index.html"><img src="images/logo.png" width="72" alt="" title="" /></a>
+    <h3>深圳市博奥自动化设备有限公司</h3>
+    <p>专注模组滑台生产厂家</p>
+    </span>
+    <div class="clear"></div>
+  </div>
+  <div class="h_nav">
+    <ul>
+      <li><a href="productlist.html">线性模组</a></li>
+      <li><a href="productlist.html">直线滑台</a></li>
+      <li><a href="productlist.html">滚珠丝杆</a></li>
+      <li><a href="productlist.html">产品中心</a></li>
+      <li><a href="case.html">应用案例</a></li>
+      <li><a href="articlelist.html">新闻中心</a></li>
+      <li><a href="info.html">关于博奥</a></li>
+      <li><a href="contact.html">联系我们</a></li>
+    </ul>
+  </div>
+  <div class="clear"></div>
+</div>
+<!--header end-->
+<div id="banner">
+  <div id="js_banner" class="banner">
+    <ul id="js_banner_img" class="banner_img clear">
+      <li class="bgli01">
+        <div class="banner_inner"> <img src="images/banner.jpg" width="100%" /> </div>
+      </li>
+      <li class="bgli02">
+        <div class="banner_inner"> <img src="images/banner.jpg" width="100%" /> </div>
+      </li>
+      <li class="bgli03">
+        <div class="banner_inner"> <img src="images/banner.jpg" width="100%" /> </div>
+      </li>
+    </ul>
+    <div class="banner_common"> <a id="js_banner_pre" href="javascript:;" class="banner_pre"></a> <a id="js_banner_next" href="javascript:;" class="banner_next"></a> </div>
+  </div>
+</div>
+<!--banner-->
+<div id="container" style="background:#fafafa;">
+  <div class="main_1">
+    <h2><span>热销产品</span></h2>
+    <ul>
+      <li><a href="product.html"><img src="images/p.jpg" width="100%" alt="" title="" /><span>直线滑台测试图片</span></a></li>
+      <li><a href="product.html"><img src="images/p.jpg" width="100%" alt="" title="" /><span>直线滑台测试图片</span></a></li>
+      <li><a href="product.html"><img src="images/p.jpg" width="100%" alt="" title="" /><span>直线滑台测试图片</span></a></li>
+      <li><a href="product.html"><img src="images/p.jpg" width="100%" alt="" title="" /><span>直线滑台测试图片</span></a></li>
+    </ul>
+    <div class="clear"></div>
+    <div class="more"><a href="#">查看更多 >></a></div>
+  </div>
+  <div class="main_2">
+    <h2><span>走进博奥</span></h2>
+    <p><img src="images/about.jpg" width="100%" alt="" title="" /></p>
+    <p class="p_ov">深圳市博奥自动化设备有限公司是国内最专业生产直线模组、线性滑台、单轴多轴滑台、机械手滑台、自动锁螺丝机等非标自动化的实力厂家。直线滑台模组可应用于各类自动化生产线、自动化设备、点胶、滴塑、喷涂、码垛、分拣、包装、焊接、金属加工、搬运、上下料、装配、印刷等常见的工业生产领域，在代替人工，提高生产效率，稳定产品质量等方面都具备显著的应用价值。 </p>
+    <div class="clear"></div>
+    <div class="more"><a href="#">查看更多 >></a></div>
+  </div>
+  <div class="g_banner"><a href="#"><img src="images/g_banner.jpg" width="100%" alt="" title="" /></a></div>
+  <div class="main_3">
+    <h2><span>客户评价</span></h2>
+    <dl>
+      <dt><a href="#"><img src="images/pj.jpg" width="100%" alt="" title="" /></a></dt>
+      <dd>
+        <h3><a href="#">大唐科技-博奥模组质量好</a></h3>
+        <p>我们是一家做自动化设备的公司。几乎每个月都会用到模组。最早我们是从深圳一家工厂进货，经常会出现一些小的问题，使用博奥模组，还是挺省心，细节考虑比较周到，图纸对接，</p>
+      </dd>
+    </dl>
+    <dl>
+      <dt><a href="#"><img src="images/pj.jpg" width="100%" alt="" title="" /></a></dt>
+      <dd>
+        <h3><a href="#">大唐科技-博奥模组质量好</a></h3>
+        <p>我们是一家做自动化设备的公司。几乎每个月都会用到模组。最早我们是从深圳一家工厂进货，经常会出现一些小的问题，使用博奥模组，还是挺省心，细节考虑比较周到，图纸对接，</p>
+      </dd>
+    </dl>
+    <dl>
+      <dt><a href="#"><img src="images/pj.jpg" width="100%" alt="" title="" /></a></dt>
+      <dd>
+        <h3><a href="#">大唐科技-博奥模组质量好</a></h3>
+        <p>我们是一家做自动化设备的公司。几乎每个月都会用到模组。最早我们是从深圳一家工厂进货，经常会出现一些小的问题，使用博奥模组，还是挺省心，细节考虑比较周到，图纸对接，</p>
+      </dd>
+    </dl>
+  </div>
+  <div class="main_4">
+    <h2><span>博奥资讯</span></h2>
+    <ul>
+      <li><a href="article.html">博奥直线模组如何保养</a></li>
+      <li><a href="article.html">博奥直线模组如何保养</a></li>
+      <li><a href="article.html">博奥直线模组如何保养</a></li>
+      <li><a href="article.html">博奥直线模组如何保养</a></li>
+      <li><a href="article.html">博奥直线模组如何保养</a></li>
+      <li><a href="article.html">博奥直线模组如何保养</a></li>
+    </ul>
+  </div>
+  <div class="g_banner"><a href="tel:075529545932"><img src="images/g_banner2.jpg" width="100%" alt="" title="" /></a></div>
+  <div class="main_5">
+    <h2><span>应用案例</span></h2>
+    <div class="mr_frbox"> <img class="mr_frBtnL prev" src="images/left.png" width="32" height="36" />
+      <div class="mr_frUl">
+        <ul>
+          <li><a href="#"><img src="images/p.jpg" width="100%" /><span>1组织结构代码证</span></a></li>
+          <li><a href="#"><img src="images/p.jpg" width="100%" /><span>2组织结构代码证</span></a></li>
+          <li><a href="#"><img src="images/p.jpg" width="100%" /><span>3组织结构代码证</span></a></li>
+        </ul>
+      </div>
+      <img class="mr_frBtnR next" src="images/right.png" width="32" height="36" /> </div>
+    <script language="javascript">
+$(".mr_frUl ul li img").hover(function(){$(this).css("border-color","#A0C0EB");},function(){$(this).css("border-color","#d8d8d8")});
+jQuery(".mr_frbox").slide({titCell:"",mainCell:".mr_frUl ul",autoPage:true,effect:"leftLoop",autoPlay:true,vis:1});
+</script>
+    <div class="clear"></div>
+  </div>
+  <div class="main_6">
+    <h2><span>预约洽谈</span></h2>
+    <ul>
+      <li><span><i>*</i>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</span>
+        <input name="" type="text" placeholder="请输入姓名" class="in_1" />
+      </li>
+      <li><span><i>*</i>电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话：</span>
+        <input name="" type="text" placeholder="请输入电话" class="in_1" />
+      </li>
+      <li><span><i>*</i>您的需求：</span>
+        <textarea placeholder="请输入您的需求" class="text_1"></textarea>
+      </li>
+      <li style="text-align:center;margin-top:25px;">
+        <input type="button" value="提 交" class="bu_1" />
+        <input type="button" value="重 置" class="bu_2" />
+      </li>
+    </ul>
+  </div>
+  <div class="clear"></div>
+</div>
+<!--container end-->
+<div id="footer">
+  <ul>
+    <li><a href="index.html"><img src="images/f_ico1.png" width="22" height="20" /><span>返回首页</span></a></li>
+    <li><a href="tel:15325953083"><img src="images/f_ico2.png" width="22" height="22" /><span>电话咨询</span></a></li>
+    <li><a href="#"><img src="images/f_ico3.png" width="17" height="23" /><span>查看地图</span></a></li>
+    <li class="fx"><a href="#2"><img src="images/f_ico4.png" width="23" height="24" /><span>一键分享</span></a>
+      <div class="fx-1">
+        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+        <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script></div>
+    </li>
+  </ul>
+</div>
+<!--footer end-->
+
+</body>
+</html>
